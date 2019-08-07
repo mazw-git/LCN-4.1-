@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bbg.mapper.InventroyMaaper">
+	<update id="updataInventory">
+		updates tb_inventory set itemnum=#{itemnum} where itemid=#{itemid}
+	</update>
+	
+	<insert id="addItem">
+		insert into tb_inventory(itemnum,itemid) values(#{itemnum},#{itemid})
+	</insert>
+	
+	<insert id="addItemErr">
+		insertss into tb_inventory(itemnum,itemid) values(#{itemnum},#{itemid})
+	</insert>
+</mapper>
